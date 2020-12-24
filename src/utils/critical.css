@@ -1,0 +1,9 @@
+html,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  height: 100%;
+  width: 100%;
+}

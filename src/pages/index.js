@@ -1,21 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import styled from "@emotion/styled"
+
+const ImageContainer = styled.div`
+  width: 100%;
+  max-width: 800px;
+  margin: 64px auto;
+  border-radius: 16px;
+  overflow: hidden;
+`
+const Container = styled.div`
+  padding: 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+  h1,
+  p {
+    color: ${props => props.theme.shade[100]};
+  }
+`
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Happy Christmas Uncle & Auntie Tripathi" />
+    <Container>
+      <h1>Happy Christmas Uncle &amp; Auntie Tripathi</h1>
+      <p>
+        Hope you're having a lovely day, looking forwards to seeing you soon
+      </p>
+      <ImageContainer>
+        <Image />
+      </ImageContainer>
+    </Container>
   </Layout>
 )
 
