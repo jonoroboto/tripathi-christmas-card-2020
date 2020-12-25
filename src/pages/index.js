@@ -21,6 +21,11 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   h1,
   h2,
   h3,
@@ -41,12 +46,12 @@ const ImageTopRight = styled.img`
 const IndexPage = () => (
   <Layout>
     <SEO title="Happy Christmas Uncle & Auntie Tripathi" />
+    <ImageTopRight src={Holly} alt="Holly leaf" />
     <Container>
       <h1>Happy Christmas Uncle &amp; Auntie Tripathi</h1>
       <h2>Have yourself, a merry little christmas!</h2>
       <h3>Love Jono, Sne & Big Kev</h3>
       <ImageContainer>
-        <ImageTopRight src={Holly} alt="Holly leaf" />
         <Image />
       </ImageContainer>
     </Container>
