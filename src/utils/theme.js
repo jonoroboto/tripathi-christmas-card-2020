@@ -1,6 +1,7 @@
 const theme = {
   // Brand
   red: "#CC231E",
+  darkRed: "#270100",
   green: "#34A65F",
   // Shade
   shade: {
